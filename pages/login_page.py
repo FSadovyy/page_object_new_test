@@ -9,7 +9,7 @@ class LoginPage(BasePage):
 
     def should_be_login_url(self):
         expected = MainPageLocators.LOGIN_URL
-        assert self.url == MainPageLocators.LOGIN_URL, f"Current url is {self.url}, must be {expected}"
+        assert self.url == expected, f"Current url is {self.url}, must be {expected}"
 
     def should_be_login_form(self):
         assert self.is_element_present(*MainPageLocators.LOGIN_FORM), "Login form is not presented"
