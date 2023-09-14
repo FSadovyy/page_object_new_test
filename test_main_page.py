@@ -8,3 +8,4 @@ def test_guest_can_go_to_login_page(browser):
     page.go_to_login_page()
     page = LoginPage(browser, browser.current_url)
     page.should_be_login_page()
+
